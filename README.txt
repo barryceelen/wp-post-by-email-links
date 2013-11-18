@@ -13,8 +13,8 @@ Create new posts with the 'link' post format by sending an email with a URL or l
 
 **Note:** Requires the [Post By Email](http://wordpress.org/plugins/post-by-email/) plugin.
 
-The plugin filters the post content after a post has been created via the [Post By Email](http://wordpress.org/plugins/post-by-email/) plugin.  
-If the post content contains only a URL it automatically assigns the 'link' [post format](http://codex.wordpress.org/Post_Formats) to the post.  
+The plugin filters the post content after a post has been created via the [Post By Email](http://wordpress.org/plugins/post-by-email/) plugin.
+If the post content contains only a URL it automatically assigns the 'link' [post format](http://codex.wordpress.org/Post_Formats) to the post and wraps the URL in a link tag.
 
 In case the post already has been assigned a post format, eg. by another plugin, the post is ignored.
 
