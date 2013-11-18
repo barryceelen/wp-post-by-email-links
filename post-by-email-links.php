@@ -10,7 +10,7 @@
  *
  * @wordpress-plugin
  * Plugin Name: Post By Email Links
- * Plugin URI:  https://github.com/barryceelen/wp-post-by-email-links
+ * Plugin URI:  http://wordpress.org/plugins/post-by-email-links/
  * Description: Create new posts with the 'link' post format by sending an email with a URL as the body.
  * Version:     0.0.1
  * Author:      Barry Ceelen
