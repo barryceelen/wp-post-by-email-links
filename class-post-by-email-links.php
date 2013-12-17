@@ -75,7 +75,7 @@ class Post_By_Email_Links {
 					'ID' => $post_id,
 					'post_content' => '<a href="' . $content . '">' . $content . '</a>',
 				);
-				$post_arr = apply_filters( 'post_by_email_links_before_update_post', $post_id, $content );
+				$post_arr = apply_filters( 'post_by_email_links_before_update_post', $post_arr, $content );
 				wp_update_post( $post_arr );
 			}
 		}
