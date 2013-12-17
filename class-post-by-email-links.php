@@ -64,6 +64,7 @@ class Post_By_Email_Links {
 	 * @param int $post_id ID of the post
 	 * @return int ID of the post
 	 * @todo Check for allowed protocols
+	 * @todo Sometimes mail programs create a hyperlink when inserting a URL, add check for hyperlink
 	 */
 	function maybe_set_post_format( $post_id ) {
 		if ( false == get_post_format( $post_id ) ) {
