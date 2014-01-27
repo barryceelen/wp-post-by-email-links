@@ -2,7 +2,7 @@
 Contributors: barryceelen
 Tags: post-by-email, email, link, linkblog, post format
 Requires at least: 3.6
-Tested up to: 3.7.1
+Tested up to: 3.8.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,8 +15,6 @@ Create new posts with the 'link' post format by sending an email with a URL or l
 
 The plugin filters the post content after a post has been created via the [Post By Email](http://wordpress.org/plugins/post-by-email/) plugin.
 If the post content contains only a URL it automatically assigns the 'link' [post format](http://codex.wordpress.org/Post_Formats) to the post and wraps the URL in a link tag.
-
-In case the post already has been assigned a post format, eg. by another plugin, the post is ignored.
 
 = Github =
 
