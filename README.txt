@@ -24,3 +24,12 @@ Fork me on [Github](https://github.com/barryceelen/wp-post-by-email-links).
 
 1. Install Post By Email Links either via the WordPress.org plugin directory, or by uploading the files to your server.
 1. Activate the plugin through the 'Plugins' menu.
+
+== Changelog ==
+
+= 0.0.2 =
+* Fix for URL not getting wrapped in a link tag
+* Save original URL in a custom field
+
+= 0.0.1 =
+* Initial version
