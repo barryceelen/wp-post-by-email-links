@@ -70,16 +70,28 @@ class Post_By_Email_Links {
 		if ( false == get_post_format( $post_id ) ) {
 			$content = trim( get_post_field( 'post_content', $post_id, 'raw' ) );
 			if ( ! strpos( $content, ' ') && $this->is_url( $content ) ) {
+
 				$content = esc_url( $content );
+
 				set_post_format( $post_id, 'link' );
+
+				// Create array for wp_update_post where the URL will be replaced by a link
 				$post_arr = array(
 					'ID' => $post_id,
 					'post_content' => '<a href="' . $content . '">' . $content . '</a>',
 				);
+
+				// Allow plugins to do stuff to the content we are about to save
 				$post_arr = apply_filters( 'post_by_email_links_before_update_post', $post_arr, $content );
+
+				// Update post
 				wp_update_post( $post_arr );
+
+				// Save original url as post_meta, in case we want it later
+				add_post_meta( $post_id, 'original_url', $content );
 			}
 		}
+
 		return $post_id;
 	}
 
