@@ -71,6 +71,8 @@ class Post_By_Email_Links {
 			$content = trim( get_post_field( 'post_content', $post_id, 'raw' ) );
 			if ( ! strpos( $content, ' ') && $this->is_url( $content ) ) {
 
+				// Strip pesky 'utm' query vars
+				$content = preg_replace( "/&?utm_(.*?)\=[^&]+/", '', $content );
 				$content = esc_url( $content );
 
 				set_post_format( $post_id, 'link' );
