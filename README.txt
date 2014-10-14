@@ -27,6 +27,9 @@ Fork me on [Github](https://github.com/barryceelen/wp-post-by-email-links).
 
 == Changelog ==
 
+= 0.0.4 =
+* Remove Google Analytics ‘utm_..’ query vars from link
+
 = 0.0.3 =
 * Fix for broken scheduled events caused by `is_admin()` check
 
